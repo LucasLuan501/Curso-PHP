@@ -40,7 +40,7 @@ if(count($_POST) > 0) {
             $erros['salario'] = 'Salário inválido';
     }
 
-    if(!count($erros) == 0) {
+    if(!count($erros)) {
         require_once "conexao.php";
 
         $sql = "INSERT INTO cadastro
